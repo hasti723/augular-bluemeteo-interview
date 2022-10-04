@@ -1,0 +1,16 @@
+<form [formGroup]="form" (submit)="submit(form.value)">
+<div uk-grid class="uk-child-width-1-1">
+    <label>
+        <input type="checkbox" class="uk-checkbox" [formControlName]="'Today'"> Today
+    </label>
+
+    <label>
+        <input type="checkbox" class="uk-checkbox" [formControlName]="'Tomorrow'"> Tomorrow
+    </label>
+
+    <label>
+        <input type="checkbox" class="uk-checkbox" [formControlName]="'Yesterday'"> Yesterday
+    </label>
+</div>
+<button class="uk-button uk-button-link uk-button-large uk-align-right uk-margin-small">Apply</button>
+</form>
